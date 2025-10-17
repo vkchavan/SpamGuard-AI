@@ -48,6 +48,7 @@ It leverages **Support Vector Machine (SVM)** and **TF-IDF Vectorization** for h
 
 
 SpamGuard-AI/
+
 ├── app.py # Streamlit web app
 ├── train_model.py # Model training script
 ├── data/ # Dataset folder (SMS spam collection)
@@ -84,9 +85,7 @@ python train_model.py
 streamlit run app.py
 
 
-Open the local URL shown in the terminal (e.g. http://localhost:8501
-)
-and explore the app.
+Open the local URL shown in the terminal (e.g. http://localhost:8501) and explore the app.
 
 
 🪪 License
