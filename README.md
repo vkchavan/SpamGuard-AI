@@ -76,141 +76,125 @@
 
 # \## 🧩 Project Structure
 
+# 📦 svm/
 
+# ┣ 📜 app.py # Streamlit web app
 
-📦 svm/
+# ┣ 📜 train\_model.py # Model training pipeline
 
-┣ 📜 app.py # Streamlit web app
+# ┣ 📂 data/ # Dataset folder
 
-┣ 📜 train\_model.py # Model training pipeline
+# ┣ 📂 model/ # Trained model (pipeline.joblib)
 
-┣ 📂 data/ # Dataset folder
+# ┣ 📜 requirements.txt # Dependencies
 
-┣ 📂 model/ # Trained model (pipeline.joblib)
+# ┗ 📜 README.md # Documentation
 
-┣ 📜 requirements.txt # Dependencies
+# 
 
-┗ 📜 README.md # Documentation
+# yaml
 
+# Copy code
 
+# 
 
+# ---
 
+# 
 
----
+# \## 🧠 Dataset
 
+# Dataset: \[UCI SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
 
+# Contains 5572 labeled SMS messages:  
 
-\## 🧠 Dataset
+# \- \*\*ham (normal)\*\* messages  
 
-Dataset: \[UCI SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
+# \- \*\*spam\*\* messages  
 
-Contains 5572 labeled SMS messages:  
+# 
 
-\- \*\*ham (normal)\*\* messages  
+# ---
 
-\- \*\*spam\*\* messages  
+# 
 
+# \## ▶️ How to Run Locally
 
+# 
 
----
+# ```bash
 
+# \# Step 1: Clone this repo
 
+# git clone https://github.com/vkchavan/SpamGuard-AI.git
 
-\## ▶️ How to Run Locally
+# 
 
+# \# Step 2: Navigate into project folder
 
+# cd SpamGuard-AI
 
-```bash
+# 
 
-\# Step 1: Clone this repo
+# \# Step 3: Install dependencies
 
-git clone https://github.com/vkchavan/SpamGuard-AI.git
+# pip install -r requirements.txt
 
+# 
 
+# \# Step 4: Train the model
 
-\# Step 2: Navigate into project folder
+# python train\_model.py
 
-cd SpamGuard-AI
+# 
 
+# \# Step 5: Run the web app
 
+# streamlit run app.py
 
-\# Step 3: Install dependencies
+# 📊 Data Visualization Highlights
 
-pip install -r requirements.txt
+# 🎯 Confusion Matrix (Model Accuracy)
 
+# 
 
+# ☁️ Spam vs Ham Word Clouds
 
-\# Step 4: Train the model
+# 
 
-python train\_model.py
+# 🔤 Top Frequent Spam Words Bar Chart
 
+# 
 
+# 📈 Dataset Summary Dashboard
 
-\# Step 5: Run the web app
+# 
 
-streamlit run app.py
+# 🧑‍💻 Developers — MVJ Solutions
 
+# Name	Email	GitHub
 
+# Vaishnavi Chavan	vaishnavichavan1712@gmail.com	github.com/vkchavan
 
-📊 Data Visualization Highlights
+# Junaid Shaikh	junaidshaikh1311@gmail.com	github.com/junaid3234
 
+# 
 
+# 🌟 Screenshots
 
-🎯 Confusion Matrix (Model Accuracy)
+# Home Page	Prediction Page
 
+# 
 
+# Insights Dashboard	Bulk Upload
 
-☁️ Spam vs Ham Word Clouds
+# 
 
+# 🏷️ License
 
+# This project is open source under the MIT License.
 
-🔤 Top Frequent Spam Words Bar Chart
+# 
 
-
-
-📈 Dataset Summary Dashboard
-
-
-
-🧑‍💻 Developers — MVJ Solutions
-
-Name	Email	GitHub
-
-Vaishnavi Chavan	vaishnavichavan1712@gmail.com
-
-&nbsp;	github.com/vkchavan
-
-
-
-Junaid Shaikh	junaidshaikh1311@gmail.com
-
-&nbsp;	github.com/junaid3234
-
-🌟 Screenshots
-
-Home Page	Prediction Page
-
-
-
-&nbsp;	
-
-Insights Dashboard	Bulk Upload
-
-
-
-&nbsp;	
-
-🏷️ License
-
-
-
-This project is open source under the MIT License
-
-.
-
-
-
-<p align="center">💬 Built with ❤️ by MVJ Solutions</p> ```
-
-
+# <p align="center">💬 Built with ❤️ by MVJ Solutions</p> ```
 
