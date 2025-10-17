@@ -1,204 +1,92 @@
-# <h1 align="center">📨 SpamGuard AI</h1>
+<h1 align="center">📨 SpamGuard AI</h1>
+<p align="center">
+  <b>Smart SMS & Email Spam Detection using SVM + TF-IDF</b><br>
+  Built with ❤️ using Streamlit, Scikit-learn & NLP
+</p>
 
-# <p align="center">
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" /></a>
+  <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-App-red.svg" /></a>
+  <a href="https://scikit-learn.org/stable/"><img src="https://img.shields.io/badge/Scikit--learn-ML-orange.svg" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" /></a>
+</p>
 
-# &nbsp; <b>Smart SMS \& Email Spam Detection using SVM + TF-IDF</b><br>
+---
 
-# &nbsp; Built with ❤️ using Streamlit, Scikit-learn \& NLP
+## 🚀 Overview
 
-# </p>
+**SpamGuard AI** is an intelligent machine-learning web app that detects **spam SMS and emails** in real time.  
+It leverages **Support Vector Machine (SVM)** and **TF-IDF Vectorization** for high-accuracy classification of messages as `spam` or `ham`.
 
-# 
+---
 
-# ---
+## ✨ Features
 
-# 
+✅ Real-time spam detection for single messages  
+✅ Bulk message prediction via CSV upload  
+✅ Interactive analytics (confusion matrix, word clouds, top-word plots)  
+✅ NLTK-based text preprocessing (stopword removal, tokenization, etc.)  
+✅ Persistent model storage with Joblib  
+✅ Modern UI powered by Streamlit  
 
-# \## 🚀 Overview
+---
 
-# 
+## 🧠 Tech Stack
 
-# \*\*SpamGuard AI\*\* is a Machine Learning web app that detects spam SMS or emails using \*\*Support Vector Machine (SVM)\*\* and \*\*TF-IDF vectorization\*\*.  
+| Component | Technology |
+|------------|-------------|
+| Frontend / UI | Streamlit |
+| ML Model | Scikit-learn (SVM Classifier) |
+| NLP Processing | NLTK, TF-IDF |
+| Visualization | Matplotlib / Seaborn / WordCloud |
+| Model Storage | Joblib |
+| Language | Python 3.9 + |
 
-# It features a modern Streamlit interface with beautiful analytics visualizations.
+---
 
-# 
+## 📂 Project Structure
 
-# ---
 
-# 
+SpamGuard-AI/
+├── app.py # Streamlit web app
+├── train_model.py # Model training script
+├── data/ # Dataset folder (SMS spam collection)
+├── model/ # Saved pipeline model.joblib
+├── requirements.txt # Dependencies
+└── README.md # Documentation
 
-# \## ✨ Features
 
-# \- 🔍 Real-time spam detection for SMS \& emails  
+---
 
-# \- 📁 Bulk prediction via CSV upload  
+## 🧾 Dataset
 
-# \- 📊 Interactive insights: Confusion Matrix, Word Clouds, Top Word Charts  
+Uses the **UCI SMS Spam Collection Dataset**  
+Total messages = **5,572**  
+- `ham` → legitimate messages  
+- `spam` → unsolicited messages  
 
-# \- 🧠 Machine Learning model: SVM + TF-IDF  
+---
 
-# \- 🧹 Text preprocessing with NLTK  
+## ⚙️ Installation & Usage
 
-# \- 🖥️ Elegant Streamlit-based UI  
+```bash
+# 1️⃣ Clone the repo
+git clone https://github.com/vkchavan/SpamGuard-AI.git
+cd SpamGuard-AI
 
-# 
+# 2️⃣ Install dependencies
+pip install -r requirements.txt
 
-# ---
+# 3️⃣ (Optional) Train model
+python train_model.py
 
-# 
+# 4️⃣ Run the Streamlit app
+streamlit run app.py
+Open the local URL shown in the terminal (e.g. http://localhost:8501
+)
+and explore the app.
+🪪 License
 
-# \## ⚙️ Tech Stack
-
-# 
-
-# | Component | Technology |
-
-# |------------|-------------|
-
-# | 💻 Frontend UI | Streamlit |
-
-# | 🧠 Machine Learning | Scikit-learn (LinearSVC) |
-
-# | 🧹 Text Cleaning | NLTK |
-
-# | 📊 Visualization | Matplotlib, Seaborn, WordCloud |
-
-# | 💾 Model Storage | Joblib |
-
-# | 🧱 Language | Python 3 |
-
-# 
-
-# ---
-
-# 
-
-# \## 🧩 Project Structure
-
-# 📦 svm/
-
-# ┣ 📜 app.py # Streamlit web app
-
-# ┣ 📜 train\_model.py # Model training pipeline
-
-# ┣ 📂 data/ # Dataset folder
-
-# ┣ 📂 model/ # Trained model (pipeline.joblib)
-
-# ┣ 📜 requirements.txt # Dependencies
-
-# ┗ 📜 README.md # Documentation
-
-# 
-
-# yaml
-
-# Copy code
-
-# 
-
-# ---
-
-# 
-
-# \## 🧠 Dataset
-
-# Dataset: \[UCI SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
-
-# Contains 5572 labeled SMS messages:  
-
-# \- \*\*ham (normal)\*\* messages  
-
-# \- \*\*spam\*\* messages  
-
-# 
-
-# ---
-
-# 
-
-# \## ▶️ Run Locally
-
-# 
-
-# ```bash
-
-# \# Step 1: Clone this repo
-
-# git clone https://github.com/vkchavan/SpamGuard-AI.git
-
-# 
-
-# \# Step 2: Go inside folder
-
-# cd SpamGuard-AI
-
-# 
-
-# \# Step 3: Install dependencies
-
-# pip install -r requirements.txt
-
-# 
-
-# \# Step 4: Train model
-
-# python train\_model.py
-
-# 
-
-# \# Step 5: Run app
-
-# streamlit run app.py
-
-# 📊 Insights \& Visualizations
-
-# 🎯 Model Accuracy Metric
-
-# 
-
-# 🧮 Confusion Matrix Heatmap
-
-# 
-
-# ☁️ Word Clouds for Spam \& Ham
-
-# 
-
-# 🔤 Top Frequent Spam Words Chart
-
-# 
-
-# 🧾 Dataset Summary Dashboard
-
-# 
-
-# 👩‍💻 Developers — MVJ Solutions
-
-# Name	Email	GitHub
-
-# Vaishnavi Chavan	vaishnavichavan1712@gmail.com	github.com/vkchavan
-
-# Junaid Shaikh	junaidshaikh1311@gmail.com	github.com/junaid3234
-
-# 
-
-# 🌟 Screenshots
-
-# Home Page	Prediction Page
-
-# 
-
-# Insights Dashboard	Bulk Upload
-
-# 
-
-# 🏷️ License
-
-# This project is open-source under the MIT License.
-
-# 
-
-# <p align="center">💬 Built with ❤️ by <b>MVJ Solutions</b></p> ```
-
+Distributed under the MIT License.
+See the LICENSE
+ file for details.
