@@ -8,7 +8,6 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" /></a>
   <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-App-red.svg" /></a>
   <a href="https://scikit-learn.org/stable/"><img src="https://img.shields.io/badge/Scikit--learn-ML-orange.svg" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" /></a>
 </p>
 
 ---
