@@ -163,7 +163,8 @@ elif st.session_state.page == "app":
         st.header("📁 Bulk CSV Prediction")
         uploaded = st.file_uploader("Upload a CSV with a column named `message`", type=['csv'])
         if uploaded:
-            df = pd.read_csv(uploaded, encoding='latin1')
+            df = pd.read_csv(uploaded, encoding='latin1', header=0, on_bad_lines='warn')
+
             if 'message' not in df.columns:
                 st.error("CSV must include a column `message`.")
             else:
@@ -294,6 +295,6 @@ elif st.session_state.page == "app":
         ### 👩‍💻 Developers — MVJ Solutions
         | Name | Email | GitHub |
         |------|--------|--------|
-        | **Vaishnavi Chavan** | [vaishnavichavan1712@gmail.com](mailto:vaishnavichavan1712@gmail.com) | [github.com/vkchavan](https://github.com/vkchavan) |
-        | **Junaid Shaikh** | [junaidshaikh1311@gmail.com](mailto:junaidshaikh1311@gmail.com) | [github.com/junaid3234](https://github.com/junaid3234) |
+        | **Junaid Shaikh** | [junaidshaikh1311@gmail.com](mailto:junaidshaikh1311@gmail.com)| [github.com/junaid3234](https://github.com/junaid3234) |
+        | **Vaishnavi Chavan** | [vaishnavichavan1712@gmail.com](mailto:vaishnavichavan1712@gmail.com)) | [github.com/vkchavan](https://github.com/vkchavan) |
         """)
