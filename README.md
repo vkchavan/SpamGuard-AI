@@ -82,9 +82,13 @@ python train_model.py
 
 # 4️⃣ Run the Streamlit app
 streamlit run app.py
+
+
 Open the local URL shown in the terminal (e.g. http://localhost:8501
 )
 and explore the app.
+
+
 🪪 License
 
 Distributed under the MIT License.
