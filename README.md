@@ -20,7 +20,7 @@
 
 # \*\*SpamGuard AI\*\* is a Machine Learning web app that detects spam SMS or emails using \*\*Support Vector Machine (SVM)\*\* and \*\*TF-IDF vectorization\*\*.  
 
-# It provides a beautiful and interactive UI built with \*\*Streamlit\*\*, including visual insights and analytics for model performance.
+# It features a modern Streamlit interface with beautiful analytics visualizations.
 
 # 
 
@@ -32,15 +32,15 @@
 
 # \- 🔍 Real-time spam detection for SMS \& emails  
 
-# \- 📁 Bulk prediction from CSV files  
+# \- 📁 Bulk prediction via CSV upload  
 
-# \- 📊 Interactive insights (Confusion Matrix, Word Clouds, Top Words Chart)  
+# \- 📊 Interactive insights: Confusion Matrix, Word Clouds, Top Word Charts  
 
 # \- 🧠 Machine Learning model: SVM + TF-IDF  
 
-# \- 🧹 Text cleaning using NLTK preprocessing  
+# \- 🧹 Text preprocessing with NLTK  
 
-# \- 🖥️ Simple, modern UI built in Streamlit  
+# \- 🖥️ Elegant Streamlit-based UI  
 
 # 
 
@@ -58,7 +58,7 @@
 
 # | 💻 Frontend UI | Streamlit |
 
-# | 🧠 Machine Learning | scikit-learn (LinearSVC) |
+# | 🧠 Machine Learning | Scikit-learn (LinearSVC) |
 
 # | 🧹 Text Cleaning | NLTK |
 
@@ -118,7 +118,7 @@
 
 # 
 
-# \## ▶️ How to Run Locally
+# \## ▶️ Run Locally
 
 # 
 
@@ -130,7 +130,7 @@
 
 # 
 
-# \# Step 2: Navigate into project folder
+# \# Step 2: Go inside folder
 
 # cd SpamGuard-AI
 
@@ -142,35 +142,39 @@
 
 # 
 
-# \# Step 4: Train the model
+# \# Step 4: Train model
 
 # python train\_model.py
 
 # 
 
-# \# Step 5: Run the web app
+# \# Step 5: Run app
 
 # streamlit run app.py
 
-# 📊 Data Visualization Highlights
+# 📊 Insights \& Visualizations
 
-# 🎯 Confusion Matrix (Model Accuracy)
-
-# 
-
-# ☁️ Spam vs Ham Word Clouds
+# 🎯 Model Accuracy Metric
 
 # 
 
-# 🔤 Top Frequent Spam Words Bar Chart
+# 🧮 Confusion Matrix Heatmap
 
 # 
 
-# 📈 Dataset Summary Dashboard
+# ☁️ Word Clouds for Spam \& Ham
 
 # 
 
-# 🧑‍💻 Developers — MVJ Solutions
+# 🔤 Top Frequent Spam Words Chart
+
+# 
+
+# 🧾 Dataset Summary Dashboard
+
+# 
+
+# 👩‍💻 Developers — MVJ Solutions
 
 # Name	Email	GitHub
 
@@ -192,9 +196,9 @@
 
 # 🏷️ License
 
-# This project is open source under the MIT License.
+# This project is open-source under the MIT License.
 
 # 
 
-# <p align="center">💬 Built with ❤️ by MVJ Solutions</p> ```
+# <p align="center">💬 Built with ❤️ by <b>MVJ Solutions</b></p> ```
 
