@@ -92,4 +92,4 @@ Open the local URL shown in the terminal (e.g. http://localhost:8501) and explor
 
 Distributed under the MIT License.
 See the LICENSE
- file for details.
+file for details.
