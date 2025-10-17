@@ -86,10 +86,3 @@ streamlit run app.py
 
 
 Open the local URL shown in the terminal (e.g. http://localhost:8501) and explore the app.
-
-
-🪪 License
-
-Distributed under the MIT License.
-See the LICENSE
-file for details.
